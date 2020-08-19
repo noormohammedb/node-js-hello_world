@@ -1,6 +1,7 @@
 try{
     const vkl = 88;
-    vkl = 33;
+    if(vkl)
+        throw("ndhoo aayi");
     console.log("Success");
 }catch(err){
     console.error(err);
