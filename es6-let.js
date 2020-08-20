@@ -1,12 +1,15 @@
 function hello(){
     function hai(){
-        var val = 44;
+        var i = 44;
+        var val = 22;
+        if(i){
+            let val = 44;
+            console.log(val);
+            i = 0;
+        }
         console.log(val);
-        return val;
     }
-    console.log(hai());;
+    hai();
 }
 
 hello();
-
-console.log(val);
