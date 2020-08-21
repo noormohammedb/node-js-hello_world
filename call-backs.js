@@ -1,14 +1,10 @@
-let long = (Timeout) => {
-	let time = new Date();
-	for( ;(new Date() - time) <= Timeout; );
+const read = require('readline-sync');
+let fun1 = (data) => {
+	console.log(data);
 }
 
-let w8 = (count,leng) => {
-	console.log("start " + count);
-	long(leng);
-	console.log("finish " + count);
+let fun2 = (callback) => {
+	callback("I am Callback");
 }
 
-setTimeout(() => w8(1,3000),300);
-setTimeout(() => w8(2,2000),200);
-setTimeout(() => w8(3,1000),100);
+fun2(fun1);
