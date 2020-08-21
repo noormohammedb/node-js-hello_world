@@ -9,6 +9,6 @@ let w8 = (count,leng) => {
 	console.log("finish " + count);
 }
 
-w8(1,3000);
-w8(2,2000);
-w8(3,1000);
+setTimeout(() => w8(1,3000),300);
+setTimeout(() => w8(2,2000),200);
+setTimeout(() => w8(3,1000),100);
