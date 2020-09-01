@@ -1,8 +1,8 @@
 let fun1 = () => {
-let variable = 1;
-let func2 = () => {
-console.log(variable);
-variable++;
+   let variable = 1;
+   let func2 = () => {
+      console.log(variable);
+      variable++;
 }
 return func2;
 }
