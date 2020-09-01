@@ -1,9 +1,24 @@
-function outer(outSideValue){
-   return function inner(inSideValue){
-      console.log(outSideValue);
-      console.log(inSideValue);
+let closureModel = (inside_value) => {
+   let privateData = "i am private";
+   return {
+      getValue : () => {
+         console.log(privateData);
+         return inside_value;
+      },
+      incrementValue : () => {
+         inside_value++;
+      },
+      decrementValue : () => {
+         inside_value--;
+      }
    }
 }
 
-let closure = outer('OutSide');
-closure('InSide');
+let closure = closureModel(10);
+console.log(closure.getValue());
+
+closure.incrementValue();
+console.log(closure.getValue());
+
+closure.decrementValue();
+console.log(closure.getValue());
