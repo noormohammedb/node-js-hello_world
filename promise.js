@@ -18,7 +18,7 @@ add(4, 3)
       console.log(product());
       return (() => product() / product())
    })
-   .then((ques)=>{
+   .then((ques) => {
       console.log(ques());
    })
    .catch((error) => {
